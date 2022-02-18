@@ -49,7 +49,7 @@
 				},
 				success : function (result){
 					if(result == "LoginSuccess"){
-						location.replace('http://localhost:8080/WBH_MVC/indexadmin/dashboard');
+						location.replace('https://watchesshop.herokuapp.com//indexadmin/dashboard');
 					}
 					$('#err').html(result);
 				}

@@ -16,7 +16,7 @@ class IndexAdminController extends Controller
 	}
 	function dashboard(){
 		if(!isset($_SESSION['admin'])){
-			header("Location: http://localhost:8080/WBH_MVC/indexadmin");
+			header("Location: https://watchesshop.herokuapp.com//indexadmin");
 		}
 		require_once 'vendor/Model.php';
 		require_once 'models/admin/orderModel.php';

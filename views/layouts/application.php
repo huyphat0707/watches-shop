@@ -7,26 +7,26 @@ if(isset($_COOKIE['user']) && !isset($_SESSION['user'])){
 <head>
 	<title> 9XWatch - Thể hiện sự lịch lãm của phái mạnh! </title>
 	<meta charset="utf-8">
-	<base href="/WBH_MVC/">
+	<base href="/">
 	<!-- <link rel="SHORTCUT ICON"  href=> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="public/css/style.css">
+	<link rel="stylesheet" href="/public/css/style.css">
 
 	<!-- File css -> file js -> file jquery -->
 	<!-- Put script after jquery -->
-	<link rel="stylesheet" href="public/bootstrap/css/bootstrap.css">
-	<script src="public/jquery/jquery-latest.js"></script>
-	<script type="text/javascript" src="public/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="public/script/script.js"></script>
+	<link rel="stylesheet" href="/public/bootstrap/css/bootstrap.css">
+	<script src="/public/jquery/jquery-latest.js"></script>
+	<script type="text/javascript" src="/public/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/public/script/script.js"></script>
 
 	<!-- font used in this site -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet"> -->
-	<link rel="stylesheet" type="text/css" href="public/animate.css">
+	<link rel="stylesheet" type="text/css" href="/public/animate.css">
 
 </head>
 <body>
 	<header id='header'>
-		<a href=""><img src="public/images/logo.png"><h2 class="logo">9XWatch</h2></a>
+		<a href=""><img src="/public/images/logo.png"><h2 class="logo">9XWatch</h2></a>
 		<ul class="header-menu">
 			<?php
 			if((!isset($_SESSION['user']))){ ?>

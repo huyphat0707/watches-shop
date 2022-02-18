@@ -247,7 +247,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
         data : {
         },
         success : function (result){
-          location.replace('http://localhost:8080/WBH_MVC/indexadmin');
+          location.replace('https://watchesshop.herokuapp.com//indexadmin');
         }
       });
     }
