@@ -9,6 +9,7 @@ class Controller
 	
 	function render($file, $data = array(), $title = null, $admin = null){
 		$file_path = "views/".$this->folder."/".$file.".php";
+        var_dump($file_path);
 		if(file_exists($file_path)){
 
 			ob_start();//start output buffering

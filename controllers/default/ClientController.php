@@ -122,8 +122,8 @@ class ClientController extends Controller
 			$tt += $num[$i]*intval(preg_replace('/\s+/', '', $row['gia']));
 		}
 		date_default_timezone_set('Asia/Ho_Chi_Minh');
-		$sql = "INSERT INTO giaodich VALUES ('',0,'','".$ten."','".$quan."','".$dc."','".$sdt."','".$tt."','".$now."')";
-		$rs = $md->exe_query($sql);
+		$sql = "INSERT INTO giaodich VALUES (default,0,1,'".$ten."','".$quan."','".$dc."','".$sdt."','".$tt."','".$now."')";
+        $rs = $md->exe_query($sql);
 		if($rs){
 			$last_id = $md->getLastInsertID();
 			for ($i=0; $i < count($sp); $i++){

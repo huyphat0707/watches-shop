@@ -18,17 +18,18 @@ class Bootstrap
 			return false;
 		} else {
 			$controller = ucfirst($url[0])."Controller";
+            var_dump($controller);
+            var_dump(file_exists("controllers/admin/IndexadminController.php"));
 			$ctrlerPath = "";
 			if(file_exists("controllers/default/".$controller.".php")){
 				$ctrlerPath = "controllers/default/".$controller.".php";
 			} elseif(file_exists("controllers/users/".$controller.".php")){
 				$ctrlerPath = "controllers/users/".$controller.".php";
-			} elseif(file_exists("controllers/admin/".$controller.".php")){
-				$ctrlerPath = "controllers/admin/".$controller.".php";
+			} elseif(file_exists("../controllers/admin/".$controller.".php")){
+				$ctrlerPath = "../controllers/admin/".$controller.".php";
 			} else {
 				$ctrlerPath = "";
 			}
-
 			if($ctrlerPath != ""){
 				require_once $ctrlerPath;
 				$object_controller = new $controller;

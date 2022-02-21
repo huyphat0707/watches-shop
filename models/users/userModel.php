@@ -25,10 +25,10 @@ class userModel extends Model
 		}
 	}
 	function addUser($name, $un, $pw, $addr, $phone, $email){
-		$now = new DateTime(null, new DateTimeZone('ASIA/Ho_Chi_Minh'));
+        $now = new DateTime(null, new DateTimeZone('ASIA/Ho_Chi_Minh'));
 		$now = $now->format('Y-m-d H:i:s');
-		$sql = "INSERT INTO thanhvien VALUES ('','".$name."','".$un."','".$pw."','".$addr."','".$phone."','".$email."','".$now."','0')";
-		if(!$this->conn->query($sql)){
+		$sql = "INSERT INTO thanhvien VALUES (default,'".$name."','".$un."','".$pw."','".$addr."','".$phone."','".$email."','".$now."','0')";
+        if(!$this->conn->query($sql)){
 			return false;
 		} else {
 			return true;

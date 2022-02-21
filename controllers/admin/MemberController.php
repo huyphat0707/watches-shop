@@ -10,7 +10,7 @@ class MemberController extends Controller
 	{
 		$this->folder = "admin";
 		if(!isset($_SESSION['admin'])){
-			header("Location: https://watchesshop.herokuapp.com//indexadmin");
+			header("Location: https://watchesshop.herokuapp.com/indexadmin");
 		}
 	}
 	function index(){

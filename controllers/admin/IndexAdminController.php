@@ -3,7 +3,7 @@
 /**
 * 
 */
-class IndexAdminController extends Controller
+class IndexadminController extends Controller
 {
 	
 	function __construct()
@@ -12,11 +12,11 @@ class IndexAdminController extends Controller
 
 	}
 	function index(){
-		require_once 'views/admin/index.php';
+		require_once './views/admin/index.php';
 	}
 	function dashboard(){
 		if(!isset($_SESSION['admin'])){
-			header("Location: https://watchesshop.herokuapp.com//indexadmin");
+			header("Location: https://watchesshop.herokuapp.com/indexadmin");
 		}
 		require_once 'vendor/Model.php';
 		require_once 'models/admin/orderModel.php';

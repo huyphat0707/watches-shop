@@ -80,13 +80,9 @@ class UserController extends Controller
 
 		if(isset($_POST['name'])){
 			$name = $_POST['name'];
-            echo $name;
 		}
 		if(isset($_POST['username'])){
 			$username = $_POST['username'];
-		} else {
-			echo "Trang khong ton tai!";
-			return 0;
 		}
 		if(isset($_POST['password'])){
 			$password = $_POST['password'];

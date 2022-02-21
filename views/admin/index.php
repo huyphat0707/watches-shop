@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Trang quản trị admin</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="public/bootstrap/css/bootstrap.css">
-	<script src="public/jquery/jquery-latest.js"></script>
-	<script type="text/javascript" src="public/bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="/public/bootstrap/css/bootstrap.css">
+	<script src="/public/jquery/jquery-latest.js"></script>
+	<script type="text/javascript" src="/public/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container-fluid" style="background-color: #2c56b5; text-align: center; margin-bottom: 20px">
-		<img src="public/images/logo.png">
+		<img src="/public/images/logo.png">
 	</div>
 	<div class="container">
 		<div class="row">
@@ -49,7 +50,7 @@
 				},
 				success : function (result){
 					if(result == "LoginSuccess"){
-						location.replace('https://watchesshop.herokuapp.com//indexadmin/dashboard');
+						location.replace('https://watchesshop.herokuapp.com/indexadmin/dashboard');
 					}
 					$('#err').html(result);
 				}
