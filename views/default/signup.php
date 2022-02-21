@@ -8,15 +8,15 @@
 			
 				<div class="form-group">
 					<label for="">Tên: </label>
-					<input type="text" class="form-control" id="name">
+					<input type="text" class="form-control" id="name" name="ten">
 				</div>
 				<div class="form-group">
 					<label for="">Tên tài khoản: </label>
-					<input type="text" class="form-control" id="username">
+					<input type="text" class="form-control" id="username" name="tentaikhoan">
 				</div>
 				<div class="form-group">
 					<label for="">Mật khẩu: </label>
-					<input type="password" class="form-control" id="password">
+					<input type="password" class="form-control" id="password" name="matkhau">
 				</div>
 				<div class="form-group">
 					<label for="">Nhập lại mật khẩu: </label>
@@ -24,15 +24,15 @@
 				</div>
 				<div class="form-group">
 					<label for="">Địa chỉ: </label>
-					<input type="text" class="form-control" id="addr">
+					<input type="text" class="form-control" id="addr" name="diachi">
 				</div>
 				<div class="form-group">
 					<label for="">Số điện thoại: </label>
-					<input type="text" class="form-control" id="tel">
+					<input type="text" class="form-control" id="tel" name="sodt">
 				</div>
 				<div class="form-group">
 					<label for="">Email: </label>
-					<input type="email" class="form-control" id="email">
+					<input type="email" class="form-control" id="email" name="email">
 				</div>
 				
 			
