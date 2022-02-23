@@ -18,15 +18,14 @@ class Bootstrap
 			return false;
 		} else {
 			$controller = ucfirst($url[0])."Controller";
-            var_dump($controller);
-            var_dump(file_exists("controllers/admin/IndexadminController.php"));
+            // str_replace('/vendor/Bootstrap.php', '', __FILE__);
 			$ctrlerPath = "";
 			if(file_exists("controllers/default/".$controller.".php")){
 				$ctrlerPath = "controllers/default/".$controller.".php";
 			} elseif(file_exists("controllers/users/".$controller.".php")){
 				$ctrlerPath = "controllers/users/".$controller.".php";
-			} elseif(file_exists("../controllers/admin/".$controller.".php")){
-				$ctrlerPath = "../controllers/admin/".$controller.".php";
+			} elseif(file_exists("controllers/manager/".$controller.".php")){
+				$ctrlerPath = "controllers/manager/".$controller.".php";
 			} else {
 				$ctrlerPath = "";
 			}
